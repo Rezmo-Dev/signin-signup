@@ -1,0 +1,36 @@
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+    /* varible's */
+    --primary-clr: #5dab28;
+    --secondary-clr: #eb9f25;
+    --light-clr: #fafafa;
+    --input-clr: #cfcfcf;
+    --font-clr: #0000001f;
+}
+
+html {
+    /* rem init */
+    font-size: 62.5%;
+}
+
+/* component's */
+
+
+/* container */
+.container {
+    max-width: 1250px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
