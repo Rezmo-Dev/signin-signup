@@ -9,6 +9,7 @@
     --light-clr: #fafafa;
     --input-clr: #cfcfcf;
     --font-clr: #0000001f;
+    --shadow-box: 0 0 1rem -.5rem #4e4e4e;
 }
 
 html {
@@ -31,7 +32,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Abel", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
