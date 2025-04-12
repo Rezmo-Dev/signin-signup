@@ -1,6 +1,83 @@
 /* init style's */
 @import url(./base.css);
 
+/* app style */
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/background.jpg);
+}
+
+.links {
+    width: 25rem;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 1rem;
+    background-color: var(--light-clr);
+    box-shadow: var(--shadow-box);
+}
+
+.links::after {
+    content: '';
+    width: 5rem;
+    height: .6rem;
+    left: 0;
+    right: 0;
+    bottom: -1.5rem;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 5rem;
+    box-shadow: inherit;
+    background-color: var(--light-clr);
+}
+
+.link-object {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-object:hover .svg-image {
+    transform: translateY(-8rem) rotate(360deg);
+}
+
+.svg-image {
+    width: 4rem;
+    height: 4rem;
+    padding: .5rem;
+    z-index: -1;
+    border-radius: 100%;
+    background-color: var(--light-clr);
+    position: absolute;
+    transition: all 350ms ease;
+}
+
+.svg {
+    width: 100%;
+    height: 100%;
+    color: var(--primary-clr);
+}
+
+.link {
+    margin: 0 1rem;
+    padding: .7rem 2.5rem;
+    border-radius: .5rem;
+    color: var(--light-clr);
+    background-color: var(--primary-clr);
+    text-decoration: none;
+    box-shadow: var(--shadow-box);
+}
+
 /* media */
 @media only screen and (max-width: 1400px) {
     .container {
