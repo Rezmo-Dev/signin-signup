@@ -125,35 +125,28 @@ form {
 
 .signin-sep {
     color: #c5c5c5;
-    margin: 3rem 0;
-    padding: .5rem;
-    display: block;
     text-align: center;
     position: relative;
+    padding: 3rem 0;
 }
 
-.signin-sep::after {
-    content: '';
-    position: absolute;
-    width: 19rem;
+.signin-sep__text {
+    margin: 3rem 0;
+    padding: .5rem;
+    position: relative;
+    z-index: 10;
+    background-color: #fafafa;
+}
+
+.signin-sep__line {
+    width: 100%;
     height: .2rem;
-    border-radius: 1rem;
     left: 0;
     top: 0;
     bottom: 0;
+    z-index: 1;
     margin: auto 0;
-    background-color: #c5c5c5;
-}
-.signin-sep::before {
-    content: '';
     position: absolute;
-    width: 19rem;
-    height: .2rem;
-    border-radius: 1rem;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
     background-color: #c5c5c5;
 }
 
