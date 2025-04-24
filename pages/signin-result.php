@@ -100,10 +100,7 @@
             exit("<div class='failed-message message' message-tag='Error'><p class='failed-text'>The Filds is Empty. Please Fill the All Input's</p><a href='./signin.html'>Back to Signin</a></div>");
         }
 
-        $dataBase = mysqli_connect("localhost", "root", "", "shop_db");
-        if (mysqli_connect_errno()) {
-            exit("<p class='error'>Can't Connect to DataBase. error => ".mysqli_connect_error()."</p>");
-        }
+        include("../assets/includes/connect.php");
 
         $addQuery = "SELECT * FROM `user` WHERE `user_name`='$username' AND `user_password`='$password'";
         $resolve = mysqli_query($dataBase, $addQuery);

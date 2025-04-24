@@ -118,12 +118,7 @@
             exit("<div class='failed-message message' message-tag='Error'><p class='failed-text'>Your Email Not True!!!</p><a href='./signup.html'>Back to Signup</a></div>");
         }
 
-        $dataBase = mysqli_connect("localhost", "root", "", "shop_db");
-        $charSetQuery = "SET CHARACTER SET UTF8";
-        mysqli_query($dataBase, $charSetQuery);
-        if (mysqli_connect_errno()) {
-            exit("<p class='error'>Can't Connect to DataBase. error => ".mysqli_connect_error()."</p>");
-        }
+        include("../assets/includes/connect.php");
 
         $addQuery = "INSERT INTO `user`(`user_fullname`, `user_name`, `user_code`, `user_password`, `user_email`, `user_address`) VALUES ('$fullname','$username','$nationalCode','$password','$email','$address')";
         $resolve = mysqli_query($dataBase, $addQuery); 
